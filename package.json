@@ -6,7 +6,7 @@
   "scripts": {
     "posts": "tp posts --out-dir src/",
     "prebuild": "npm run posts",
-    "build": "parcel build src/index.html --out-dir build --public-url ./blog/ --no-minify",
+    "build": "parcel build src/index.html --out-dir build --public-url /blog/ --no-minify",
     "parcel": "parcel src/index.html --out-dir build",
     "dev": "run-p 'posts -- --watch' parcel"
   },
