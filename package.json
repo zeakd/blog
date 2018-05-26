@@ -1,0 +1,29 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "posts": "tp posts --out-dir src/",
+    "prebuild": "npm run posts",
+    "build": "parcel build src/index.html --out-dir build --public-url ./blog/ --no-minify",
+    "parcel": "parcel src/index.html --out-dir build",
+    "dev": "run-p 'posts -- --watch' parcel"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^6.0.1",
+    "globby": "^8.0.1",
+    "gray-matter": "^4.0.1",
+    "marked": "^0.3.19",
+    "meow": "^5.0.0",
+    "nunjucks": "^3.1.2",
+    "parcel-bundler": "^1.8.1",
+    "tinypost": "0.0.2"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.3"
+  }
+}
