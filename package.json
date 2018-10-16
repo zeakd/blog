@@ -8,7 +8,7 @@
     "prebuild": "npm run posts",
     "build": "parcel build src/index.html --out-dir build --public-url ./blog/ --no-minify",
     "parcel": "parcel src/index.html --out-dir build",
-    "dev": "run-p 'posts -- --watch' parcel"
+    "dev": "node scripts/dev.js"
   },
   "keywords": [],
   "author": "",
